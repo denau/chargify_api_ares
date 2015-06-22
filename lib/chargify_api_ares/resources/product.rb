@@ -1,5 +1,8 @@
 module Chargify
   class Product < Base
+
+    include ChainGang
+    
     def self.find_by_handle(handle)
       find(:one, :from => :lookup, :params => {:handle => handle})
     end

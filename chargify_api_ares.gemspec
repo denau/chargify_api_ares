@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.specification_version = 3 if s.respond_to? :specification_version=
-  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version= 
+  s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.rubygems_version          = '1.3.7'
 
   s.name        = 'chargify_api_ares'
@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
 
   # Runtime Dependencies
   s.add_runtime_dependency('activeresource', '>= 3.2.16')
+  s.add_runtime_dependency('chaingang')
 
   # Development Dependencies
   s.add_development_dependency('rake', '~> 10.0.3')
@@ -29,4 +30,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency('vcr')
   s.add_development_dependency('dotenv')
   s.add_development_dependency('appraisal')
+  s.add_development_dependency('chaingang')
 end
